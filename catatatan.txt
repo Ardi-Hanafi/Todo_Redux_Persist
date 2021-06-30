@@ -1,0 +1,52 @@
+// const loginReducer = (state = initialState, action) => {
+//     const _actions = {
+//         [actionName.USER_LOGIN]: () => {
+//             return {
+//                 ...state,
+//                 action: action.type,
+//                 login: action.payload
+//             }
+//         },
+//         [actionName.USER_LOGOUT]: () => {
+//             return {
+//                 ...state,
+//                 action: action.type,
+//                 login: {...loginInitialState.login}
+//             }
+//         },
+//         DEFAULT: () => state
+//     }
+//     return (_actions[action.type] || _actions.DEFAULT)()
+// }
+// export default loginReducer;
+
+
+// const todoReducer = (state = initialState, action) => {
+//     const _actions = {
+//         [actionName.TODO_ADD]: () => {
+//             return {
+//                 ...state,
+//                 action: action.type,
+//                 todo: [...state.todo, action.payload]
+//             }
+//         },
+//         [actionName.TODO_UPDATE]: () => {
+//             state.todo.splice(action.payload.param, 1, action.payload.data)
+//             return {
+//                 ...state,
+//                 action: action.type,
+//                 todo: state.todo
+//             }
+//         },
+//         [actionName.TODO_DELETE]: () => {
+//             return {
+//                 ...state,
+//                 action: action.type,
+//                 todo: state.todo.filter((data, index) => index !== action.payload) 
+//             }
+//         },
+//         DEFAULT: () => state
+//     }
+//     return (_actions[action.type] || _actions.DEFAULT)()
+// }
+// export default todoReducer;

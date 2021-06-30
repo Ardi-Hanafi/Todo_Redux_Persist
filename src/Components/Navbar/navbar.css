@@ -1,0 +1,37 @@
+.nav {
+    background-color: #00bea2;
+    color: #FFF;
+    height: 60px;
+}
+.con-nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.con-nav h1 {
+    font-size: 28px;
+}
+.con-nav .username {
+    display: flex;
+}
+.con-nav .username h4 {
+    background-color: #FFF;
+    color: #00bea2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.con-nav .username span {
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.con-nav .username span:last-child {
+    margin-left: 6px;
+}

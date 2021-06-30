@@ -1,0 +1,136 @@
+@import "../../Themes/colors.scss";
+// @import url('../../Themes/fonts.scss');
+
+.con-home {
+    width: auto;
+    min-width: 500px;
+    height: auto;
+    min-height: 100vh;
+    background-color: map-get($color, base-page);
+
+    .con-todo-form {
+        display: flex;
+        height: auto;
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .input {
+            height: 35px;
+            border: 1px solid map-get($color, primary-border);
+            border-radius: 4px;
+            color: map-get($color, primary);
+            background-color: map-get($color, whiteF);
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+            margin-right: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: rgba(131, 190, 182, 0.7);
+        }
+
+        button {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: auto;
+            height: 35px;
+            width: 70px;
+            border: none;
+            border-radius: 4px;
+            justify-content: space-evenly;
+            align-items: center;
+            color: map-get($color, whiteF);
+            font-size: 13px;
+            font-family: 'Poppins';
+            font-weight: 500;
+            &.add {
+                background-color: map-get($color, success);
+            }
+            &.add:hover {
+                background-color: map-get($color, success-dark);
+            }
+            &.update {
+                background-color: map-get($color, warning);
+            }
+            &.update:hover {
+                background-color: map-get($color, warning-dark);
+            }
+        }
+    }
+    .con-todo-item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            min-width: 100%;
+            align-items: center;
+            background-color: #FFFFFF;
+            margin-right: auto;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 4px;
+            border: 1px solid #ececec;
+            transition: 150ms all ease-in-out;
+            &:hover {
+                box-shadow: map-get($color, box-shadow);
+            }
+
+            .left {
+                display: flex;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: map-get($color, primary-2);
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+
+            .right {
+                button {
+                    cursor: pointer;
+                    margin-bottom: auto;
+                    height: 25px;
+                    width: 60px;
+                    border: none;
+                    border-radius: 4px;
+                    justify-content: center;
+                    align-items: center;
+                    color: map-get($color, whiteF);
+                    font-size: 13px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    &.update {
+                        margin-left: 10px;
+                        background-color: map-get($color, warning);
+                    }
+                    &.update:hover {
+                        background-color: map-get($color, warning-dark);
+                    }
+                    &.delete {
+                        margin-left: 10px;
+                        background-color: map-get($color, danger);
+                    }
+                    &.delete:hover {
+                        background-color: map-get($color, danger-dark);
+                    }
+                }
+            }
+        }        
+    }
+}
